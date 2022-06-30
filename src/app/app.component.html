@@ -1,0 +1,35 @@
+this is haeder
+<p>
+    <span>hi!</span>
+
+<div>
+
+    {{title}}
+</div>
+<app-sample [myName]="name"></app-sample>
+<app-sample2 #sample2com (costomEve)="fromsample2comp()"></app-sample2>
+<button (click)="fromsample2comp()">click</button>
+
+<div>
+    <input (keyup)="keyUp()" [(ngModel)]="text" /> <br>
+    <button (click)="wellCome(name)">wellcome</button>
+    <button (click)="clear()">clear</button> <br>
+    <input [(ngModel)]='name' (ngModelChange)="modelChange()" /> <br>
+    {{name}} <br>
+
+    <button (click)="wellCome(name)">wellcome</button>
+    <button (click)="clear()">clear</button>
+</div>
+<div>
+    <p>
+        <input (keydown)="keyDown()" [(ngModel)]="test" /> <br>
+        <button (click)="wellCome(name)">wellcome</button>
+        <button (click)="clear()">clear</button> <br>
+        <input [(ngModel)]='wish' /> <br>
+        {{wish}} <br>
+        <button (click)="login()">start</button>
+        <button (click)="join()">join</button>
+        <button (click)="clear()">clear</button>
+    </p>
+</div>
+this is footer
