@@ -6,15 +6,14 @@ import { AppComponent } from './app.component';
 import { SampleComponent } from './sample/sample.component';
 import { Sample2Component } from './sample2/sample2.component';
 import { Sample3Component } from './sample3/sample3.component';
-import { TestComponent } from './test/test.component';
+import { CustomDirective } from './custom.directive';
 @NgModule({
   declarations: [
     AppComponent,
     SampleComponent,
     Sample2Component,
     Sample3Component,
-    TestComponent, 
-    
+    CustomDirective,
   ],
   imports: [
     BrowserModule,

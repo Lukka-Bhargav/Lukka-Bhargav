@@ -6,9 +6,44 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./sample.component.css']
 })
 export class SampleComponent implements OnInit {
-
-@Input('myName') name : any;
+  title = 'Sample!';
+  status :any;
+  playersInfo :any;
+@Input('youCanChangeIfYouWant') name : any;
   constructor() {
+    this.status = true;
+    this.playersInfo =[
+      {
+      player : 1,
+      name : 'kohli',
+      age : 35,
+      gender : 'male',
+      runs : 9000,
+    },
+    {
+      player : 2,
+      name : 'dhoni',
+      age : 38,
+      gender : 'male',
+      runs : 7000,
+    },
+    {
+      player : 3,
+      name : 'sachin',
+      age : 45,
+      gender : 'male',
+      runs : 10000,
+    },
+    {
+      player : 4,
+      name : 'ganguli',
+      age : 45,
+      gender : 'male',
+      runs : 9500,
+    }
+  ]
+
+
     console.log('this output comes from constructor sample',);
    }
 

@@ -1,4 +1,5 @@
-import { Component, NgModule, ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,14 +8,17 @@ import { Component, NgModule, ViewChild } from '@angular/core';
 })
 export class AppComponent {
   title = 'MyNewProject';
-  wish = '';
+  wish = 'hi';
   text = '';
-  name = 'HELLO BHARGAV';
+  name = 'Enter Your Name';
   test = '';
 
   inputValue: any;
 
   @ViewChild('sample2com') fromsample2:any;
+
+
+  constructor(public router : Router){};
 
   wellCome(name: string) {
     console.log('wellCome to my project', name);
@@ -50,10 +54,26 @@ export class AppComponent {
   modelChange() {
     console.log('this output comes form ng model change');
   }
+  
   fromsample2comp() {
     console.log('customEve from sample2');
     debugger;
     console.log('this output comes from @ViewChild(sample2com)',this.fromsample2comp);
+  }
+
+  fromsample3comp(){
+    console.log('this output comes frome samplie3');
+    this.router.navigate(['/sample3'])
+  }
+
+  goToSample(){
+    console.log('this out put comes from sample')
+    this.router.navigate(['/sample'])
+  }
+
+  goToSample2(){
+    console.log('this out put comes from sample2')
+    this.router.navigate(['/sample2'])
   }
 
 }
