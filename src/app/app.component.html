@@ -1,0 +1,48 @@
+this is haeder
+<p>
+    <span>hi!</span>
+
+<div>
+
+    {{title}}
+
+</div>
+
+<app-sample [youCanChangeIfYouWant]="name"></app-sample>
+<app-sample2 #sample2com (costomEve)="fromsample2comp()"></app-sample2>
+<button (click)="fromsample2comp()">click</button><br>
+<app-sample3></app-sample3>
+<button (click)="fromsample3comp()">sample3 click here</button><br>
+<div>
+    <input (keyup)="keyUp()" [(ngModel)]="text" /> <br>
+    <button (click)="wellCome(name)">wellcome</button>
+    <button (click)="clear()">clear</button> <br>
+    <input [(ngModel)]='name' (ngModelChange)="modelChange()" /> <br>
+    <button (click)="wellCome(name)">wellcome</button>
+    <button (click)="clear()">clear</button>
+</div>
+
+<div>
+    <p>
+        <input (keydown)="keyDown()" [(ngModel)]="test" /> <br>
+        <button (click)="wellCome(name)">wellcome</button>
+        <button (click)="clear()">clear</button> <br>
+        <input [(ngModel)]='wish' /> <br>
+        {{wish}} <br>
+        <button (click)="login()">start</button>
+        <button (click)="join()">join</button>
+        <button (click)="clear()">clear</button>
+    </p>
+</div><br>
+
+this is footer
+
+<router-outlet></router-outlet>
+<div>
+    <a routerLink="/sample">goToSample</a><br>
+    <button (click)="goToSample()">goToSample</button><br>
+    <a routerLink="/sample2">goToSample2</a><br>
+    <button (click)="goToSample2()">goToSample2</button><br>
+    <a routerLink="/sample3">goToSample3</a> <br>
+    <button (click)="fromsample3comp()">goToSample3</button>
+</div>
