@@ -12,9 +12,8 @@ export class AppComponent {
   text = '';
   name = 'Enter Your Name';
   test = '';
-
   inputValue: any;
-
+  date='07-04-2022';
   @ViewChild('sample2com') fromsample2:any;
 
 
