@@ -7,6 +7,7 @@ import { SampleComponent } from './sample/sample.component';
 import { Sample2Component } from './sample2/sample2.component';
 import { Sample3Component } from './sample3/sample3.component';
 import { CustomDirective } from './custom.directive';
+import { FileSizeConvertionPipe } from './file-size-convertion.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,6 +15,7 @@ import { CustomDirective } from './custom.directive';
     Sample2Component,
     Sample3Component,
     CustomDirective,
+    FileSizeConvertionPipe,
   ],
   imports: [
     BrowserModule,

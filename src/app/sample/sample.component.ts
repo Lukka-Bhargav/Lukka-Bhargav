@@ -17,28 +17,28 @@ export class SampleComponent implements OnInit {
       player : 1,
       name : 'kohli',
       age : 35,
-      gender : 'male',
+      gender : 'MALE',
       runs : 9000,
     },
     {
       player : 2,
       name : 'dhoni',
       age : 38,
-      gender : 'male',
+      gender : 'MALE',
       runs : 7000,
     },
     {
       player : 3,
       name : 'sachin',
       age : 45,
-      gender : 'male',
+      gender : 'MALE',
       runs : 10000,
     },
     {
       player : 4,
       name : 'ganguli',
       age : 45,
-      gender : 'male',
+      gender : 'MALE',
       runs : 9500,
     }
   ]
